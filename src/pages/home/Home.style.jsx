@@ -6,13 +6,13 @@ export const HomeDiv = styled(Flex)`
 `;
 
 export const HomeImg = styled.div`
-  margin: 2rem;
+  margin: 1rem;
   display: flex;
   justify-content: center;
   width: 100%;
   img {
     width: 45%;
-    height: 50vh;
+    height: 40vh;
     border-radius: 1rem;
   }
 `;
