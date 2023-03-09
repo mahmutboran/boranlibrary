@@ -7,6 +7,7 @@ import Login from "../pages/login/Login";
 import PrivateRouter from "./PrivateRouter";
 import { useState } from "react";
 import Footer from "../components/footer/Footer";
+import Detail from "../pages/detail/Detail";
 
 const AppRouter = () => {
   const [storageUser, setStorageUser] = useState();
@@ -30,6 +31,10 @@ const AppRouter = () => {
             {
               path: "/about",
               element: <About />,
+            },
+            {
+              path: "/detail/:id",
+              element: <Detail/>,
             },
           ],
         },

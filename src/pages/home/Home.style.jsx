@@ -6,10 +6,10 @@ export const HomeDiv = styled(Flex)`
 `;
 
 export const HomeImg = styled.div`
-    margin: 2rem;
-    display:flex;
-    justify-content:center;
-    width:100%;
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
   img {
     width: 45%;
     height: 50vh;
@@ -17,5 +17,5 @@ export const HomeImg = styled.div`
   }
 `;
 export const MainDiv = styled(Flex)`
-  flex-direction: row;
+  /* flex-direction: row; */
 `;

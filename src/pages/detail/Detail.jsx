@@ -4,9 +4,9 @@ import {DetailContainer,DetailTitle,DetailImg,Description, InfoPart} from "./Det
 import defaultImg from "../../assets/book.jpg"
 const Detail = () => {
   const { state } = useLocation();
-  const { id } = useParams();
-  console.log(id);
-  console.log(state);
+  // const { id } = useParams();
+  // console.log(id);
+  console.log(state); 
 
   return (
     <DetailContainer>

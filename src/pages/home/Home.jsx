@@ -10,10 +10,6 @@ const Home = () => {
   const [selectType, setSelectType] = useState("all");
   const [myData, setMyData] = useState([]);
   const APP_KEY = process.env.REACT_APP_apiKey;
-
-  console.log(query)
-  console.log(selectType)
-  console.log(APP_KEY)
   const url = `https://www.googleapis.com/books/v1/volumes?q=${query}&printType=${selectType}&key=${APP_KEY}`;
 
   const getData = async () => {
@@ -38,7 +34,7 @@ const Home = () => {
           <img src={homeImg} alt="homeImg" />
         </HomeImg>
       ) : (
-        <MainDiv>
+        <MainDiv wrap="wrap">
           {myData.map((item) => (
             <Card key={item.id} item={item} />
           ))}
